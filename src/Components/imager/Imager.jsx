@@ -8,7 +8,7 @@ function Imager() {
     {
       _id: 2,
       userId: 1234567896,
-      img: "http://localhost:8800/img/goku.png",
+      img: "https://nubapi.onrender.com/img/goku.png",
       desc: "chats",
       likes: 5,
     },
@@ -23,7 +23,7 @@ function Imager() {
     {
       _id: 1,
       userId: 12234567896,
-      img: "http://localhost:8800/img/luffy.jpg",
+      img: "https://nubapi.onrender.com/img/luffy.jpg",
       desc: "chats",
       likes: 6,
     },
@@ -53,7 +53,7 @@ function Imager() {
   useEffect(() => {
     const getConversations = async () => {
       try {
-        const res = await axios.get("http://127.0.0.1:8800/api/posts/");
+        const res = await axios.get("https://nubapi.onrender.com/api/posts");
         // console.log(res.data);
         settour(res.data);
       } catch (err) {
@@ -81,7 +81,7 @@ function Imager() {
 
     try {
       const res = await axios.put(
-        "http://127.0.0.1:8800/api/posts/" + ele._id,
+        "https://nubapi.onrender.com/api/posts" + ele._id,
         { likes: ele.likes * 1 + 1 }
       );
       console.log(res.data);
@@ -95,12 +95,12 @@ function Imager() {
     console.log(chats);
     const newpost = {
       userId: 1234567896,
-      img: "http://localhost:3000/img/pin.png",
+      img: "https://nubapi.onrender.com/img/pin.png",
       desc: chats,
       likes: tour.length,
     };
     try {
-      const res = await axios.post("http://127.0.0.1:8800/api/posts/", newpost);
+      const res = await axios.post("https://nubapi.onrender.com/api/posts", newpost);
       // res.data
       console.log(res.data);
       // settour(res.data);
@@ -112,7 +112,7 @@ function Imager() {
   const handelrating = async (ele) => {
     try {
       const res = await axios.put(
-        "http://127.0.0.1:8800/api/posts/" + ele._id,
+        "https://nubapi.onrender.com/api/posts" + ele._id,
         { rating: ele.rating * 1 + 1 }
       );
       console.log(res.data);
