@@ -16,7 +16,7 @@ function Imager() {
     {
       _id: 3,
       userId: 12345647896,
-      img: "https://nubapi.onrender.com//img/bleach.jpg",
+      img: "https://nubapi.onrender.com/img/bleach.jpg",
       desc: "chats",
       likes: 5,
     },

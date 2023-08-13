@@ -417,3 +417,22 @@ img {
   -webkit-background-clip: text;
   color: transparent;
 }
+@media screen and (max-width: 980px) {
+  .maincontainer{
+    /* background-color: lightgreen; */
+    flex-direction: column;
+  }
+  .middle-views{
+      /* background-color: lightgreen; */
+      flex-direction: column;
+  }
+  .pro-boxes{display: none;}
+  .search{
+    width: 66%;
+    margin-left: 1rem;
+  }
+  .search:hover::placeholder {
+    color: rgb(14, 194, 98);
+    transform: translateX(0px);
+  }
+}
