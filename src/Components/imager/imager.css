@@ -49,7 +49,7 @@
   margin-top: 5rem;
   border-radius: 1rem;
   width: 100%;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
   /* padding: 0.4rem; */
 }
@@ -238,7 +238,7 @@ img {
   margin: 0.2rem;
   text-align: center;
   color: aliceblue;
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
   gap: 1.2rem;
   background-image: linear-gradient(
